@@ -1,0 +1,165 @@
+body{
+  background-color: #D3D3D8;
+  color: #FFf;
+
+
+
+}
+.background{
+  position:absolute;
+  margin: auto;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:auto;
+  background: url('gNotg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -100;
+  opacity: .10
+
+}
+.center-div{
+  position: absolute;
+  margin: auto;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height:50%;
+  z-index: 100;
+}
+
+.aboutMe h1 {
+  text-align: center;
+}
+.aboutMe span{
+  font-style: italic;
+}
+
+.aboutMe p{
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.social-media{
+  float: right;
+}
+
+.social-media li{
+  list-style: none;
+  display: inline;
+
+
+}
+
+.social-media img {
+  width: 3.5em;
+  height: auto;
+  filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.3));
+}
+
+
+
+
+
+
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.2.1
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+/* Hang */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
