@@ -9,18 +9,42 @@
 </head>
 <body>
   <div class=" background"></div>
-    <div class="aboutMe center-div animated zoomIn">
+    <div id="aboutMe" class="aboutMe center-div animated zoomIn">
       <h1>I'm German but not <span>really</span> German</h1>
-      <p>I was actually born in Mexico but that is not why you are here. You are here because you need a Developer. I'm also one. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sequi repellat, tenetur molestiae a inventore facere tempora, unde pariatur commodi voluptate corporis, odio amet animi similique sit labore illo aliquid quas ratione, quaerat ea deleniti nihil! Hic assumenda consectetur molestiae nemo, nesciunt ipsa voluptatum similique. Aperiam natus dolorem sint cum?</p>
-
-    <div class="social-media">
+      <p>I was actually born in Mexico but that is not why you are here. I'm a front end web developer working on becoming a fullstack developer. I live to solve problems using code and coffee. Bring me forth your problems and I will find solutions to them! </p>
       <ul>
-        <li><a href="https://www.instagram.com/theawesomesmiley/" target="_blank"s><img class="hvr-hang" src="instagram.svg" alt=""></a></li>
-        <li><a href="https://www.youtube.com/channel/UC0y_YVXOGge141aAoNiaeRg/featured?view_as=public" target="_blank"><img class="hvr-hang" src="youtube.svg" alt=""></a></li>
-        <li><a href="https://github.com/germangamboa95" target="_blank"><img class="hvr-hang" src="github.svg" alt=""></a></li>
+        <h2>My current technologies</h2>
+        <li>Javascript</li>
+        <li>PHP with Lavarel</li>
+        <li>MongoDB</li>
+        <li>MySQL</li>
+        <li>CSS3 with Sass</li>
+        <li></li>
+      </ul>
+      <h3><a id="clicker" href="#">My projects</a></h3>
+
+    <div  class="social-media">
+      <ul>
+        <li><a href="https://www.instagram.com/theawesomesmiley/" target="_blank"s><img class="hvr-hang" src="./imgs/instagram.svg" alt=""></a></li>
+        <li><a href="https://www.youtube.com/channel/UC0y_YVXOGge141aAoNiaeRg/featured?view_as=public" target="_blank"><img class="hvr-hang" src="./imgs/youtube.svg" alt=""></a></li>
+        <li><a href="https://github.com/germangamboa95" target="_blank"><img class="hvr-hang" src="./imgs/github.svg" alt=""></a></li>
       </ul>
     </div>
     </div>
+    <div id ="myProjects" class="my-projects center-div animated zoomIn">
+      <div><h1>German's Projects</h1><h3><a id="clickerB" href="#">Back</a></h3></div>
+
+    </div>
   </div>
+  <script type="text/javascript">
+    document.getElementById('clicker').addEventListener('click',function(){
+      document.getElementById('aboutMe').style.display = "none";
+      document.getElementById('myProjects').style.display = "block";
+    });
+    document.getElementById('clickerB').addEventListener('click',function(){
+      document.getElementById('aboutMe').style.display = "block";
+      document.getElementById('myProjects').style.display = "none";
+    });
+  </script>
 </body>
 </html>
